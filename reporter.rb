@@ -2,13 +2,16 @@ require 'json'
 require_relative  'features/support/api_helper.rb'
 
 
+job_url=ARGV[1]
+build_number=ARGV[0]
 
-thumbnail={'url'=>'https://i.imgur.com/B2XMuqi.jpg'}
+
+thumbnail={'url'=>'https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX3020901.jpg'}
 fields=[]
 embed=[]
-fields.push({'name'=>'Author','value'=>'US'})
-fields.push({'name'=>'Position','value'=>'QA Engineer'})
-embed.push({'title'=>'Rich content (cmon)',
+fields.push({'name'=>'Jenkins job','value'=>job_url})
+fields.push({'name'=>'Build number','value'=>build_number.to_s})
+embed.push({'title'=>'No killerino pls',
                 'color'=>6288450,
                 'thumbnail'=>thumbnail,
                 'fields'=>fields})
