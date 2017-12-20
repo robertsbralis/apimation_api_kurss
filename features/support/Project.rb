@@ -9,18 +9,15 @@ class Project
     @name=name
     @type='basic'
     @environments=[]
-    @global_variables ||= []
+    @global_variables = []
   end
 
   def set_environments(env,id)
     hash={'name'=>env,'id'=>id}
-    @environments= @environments.push(hash)
+    @environments = @environments.push(hash)
   end
 
   def set_project_id(id)
     @project_id=id
-  end
-  def set_global_vars
-
   end
 end
