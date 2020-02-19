@@ -6,12 +6,12 @@ job_url=ARGV[1]
 build_number=ARGV[0]
 
 
-thumbnail={'url'=>'https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX3020901.jpg'}
+thumbnail={'url'=>'https://previews.123rf.com/images/rimmart/rimmart1910/rimmart191000292/132971245-caution-icon-with-triangle-form-danger-sign-on-isolated-background-caution-warning-icon-triangle-war.jpg'}
 fields=[]
 embed=[]
 fields.push({'name'=>'Jenkins job','value'=>job_url})
 fields.push({'name'=>'Build number','value'=>build_number.to_s})
-embed.push({'title'=>'No killerino pls',
+embed.push({'title'=>'API automation job',
                 'color'=>6288450,
                 'thumbnail'=>thumbnail,
                 'fields'=>fields})
